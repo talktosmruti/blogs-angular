@@ -1,0 +1,8 @@
+
+<app-card-tile>
+<a href="#" (click)="expandAll()">Expand all</a>
+<br>
+<a href="#" (click)="markAllfav()">Mark all Favorite</a>
+</app-card-tile>
+<app-blog-post-tile *ngFor="let post of blogPosts[currentPage]" [post] = "post" #tile></app-blog-post-tile>
+<app-paginator [numberofPages]="blogPosts.length" (pageNumberClicked)= "updatePage($event)"></app-paginator>
