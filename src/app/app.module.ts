@@ -10,7 +10,8 @@ import { AppendPipe } from './append.pipe';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { BlogDataService } from './blog-data.service';
 import { HighlighterDirective } from './highlighter.directive';
-import { CardTileComponent } from './card-tile/card-tile.component'
+import { CardTileComponent } from './card-tile/card-tile.component';
+import { ShellComponent } from './shell/shell.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CardTileComponent } from './card-tile/card-tile.component'
     AppendPipe,
     PaginatorComponent,
     HighlighterDirective,
-    CardTileComponent
+    CardTileComponent,
+    ShellComponent
   ],
   imports: [
     BrowserModule,
